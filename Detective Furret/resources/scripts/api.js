@@ -21,13 +21,6 @@ const PokeAPI = {
         return data.results;
     },
 
-    async getPokemonByType(typeName) {
-        const res = await fetch(`https://pokeapi.co/api/v2/type/${typeName}`);
-        if (!res.ok) return null;
-        const data = await res.json();
-        return data.pokemon.map(p => p.pokemon);
-    },
-
     async getEvolutionChain(id) {
         try {
             const speciesUrl = `${this.baseURL}/pokemon-species/${id}`;
