@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const list = await PokeAPI.getPokemonBatch();
             if (!list || list.length === 0) return;
             
-            // Check if we're past the generation end
             if (PokeAPI.genEnd) {
                 const lastId = parseInt(list[list.length - 1].url.split('/').filter(x => x).pop());
                 if (lastId > PokeAPI.genEnd) {
