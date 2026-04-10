@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/detail.js"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/PokemonDetail.css">
+</head>
+<body>
+    <nav>
+        <div class="navtitle">
+            <h1><span class="mascotColorDark">Detective</span> <span class="mascotColorLight">Furret</span></h1>
+        </div>
+        <div class="mascotImage">
+            <img src="../../public/images/Furret_mascot.png" alt="Furret">
+        </div>
+    </nav>
+
+    <div class="pokemon-detail">
+        <div class="navigation-buttons">
+            <button id="prevButton">← Previous</button>
+            <button id="nextButton">Next →</button>
+        </div>
+
+        <div class="detail-header">
+            <img id="pokemonSprite" src="" alt="Pokemon">
+            <div class="detail-info">
+                <h1 id="pokemonName"></h1>
+                <p id="pokemonId"></p>
+                <div id="pokemonTypes"></div>
+            </div>
+        </div>
+
+        <div class="detail-stats">
+            <h2>Stats</h2>
+            <div id="statsContainer"></div>
+        </div>
+
+        <div class="detail-abilities">
+            <h2>Abilities</h2>
+            <div id="abilitiesContainer"></div>
+        </div>
+
+        <button id="evolutionButton">Show Evolution Chain</button>
+        <div id="evolutionChain" style="display:none;"></div>
+    </div>
+</body>
+</html>

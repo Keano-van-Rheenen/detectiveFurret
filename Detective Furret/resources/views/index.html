@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../scripts/api.js"></script>
+    <script src="../scripts/index.js"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navtitle">
+            <h1><span class="mascotColorDark">Detective</span> <span class="mascotColorLight">Furret</span></h1>
+        </div>
+        <div class="mascotImage">
+            <img src="../../public/images/Furret_mascot.png" alt="Furret">
+        </div>
+    </nav>
+
+    <div class="searchbar">
+        <div class="searches">
+            <div class="search" name="nameSearch">
+                <div class="label">
+                    <p>Name:</p>
+                    <input type="text" class="inputtext" id="nameSearch" placeholder="...">
+                </div>
+                <div id="autocompleteBox" class="autocomplete"></div>
+            </div>
+            
+            <div class="search" name="generationSearch">
+                <div class="label">
+                    <p>Generation:</p>
+
+                    <input type="number" class="inputtext" id="generationSearch" placeholder="...">
+                </div>
+            </div>
+        </div>
+
+        <div class="search-go">
+            <button id="searchButton">GO!</button>
+        </div>
+    </div>
+
+    <div class="pokemon-list">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+    <div class="list-trigger"></div>
+</body>
+
+</html>
